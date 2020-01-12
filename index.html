@@ -1,32 +1,39 @@
-<p>Hello 大家好</p>
-<p>我是YYY，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
-<p>Hello 大家好</p>
-<p>我是YYY，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML5 Canvas创意个性化时钟动画特效</title>
+</head>
+<body>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
-<p>Hello 大家好</p>
-<p>我是YYY，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<style type="text/css">
+	.relogio{width:550px;height:550px;margin:40px auto 0 auto;}
+</style>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
-<p>Hello 大家好</p>
-<p>我是YYY，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<div class="relogio"></div>
+<div>
+	<center>
+		<span id="todaydatetime"></span>
+	</center>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<script>
+	function displayTime() {
+		var elt = document.getElementById("todaydatetime");
+		var now = new Date();
+		var h = now.getHours();
+		var m = now.getMinutes();
+		var s = now.getSeconds();
+		var ms = now.getMilliseconds();
+		elt.innerHTML =h + "点:" + m + "分:" + s + "秒:" + ms;
+		setTimeout(displayTime, 100);
+	}
+	displayTime();
+</script>
+
+
+</div>
+</body>	
+</html>
